@@ -6,7 +6,7 @@ using UnityEngine;
 using ItemAPI;
 using MultiplayerBasicExample;
 
-namespace ExampleMod
+namespace TitansMod
 {
     public class BudgetShelletonKey : PassiveItem
     {

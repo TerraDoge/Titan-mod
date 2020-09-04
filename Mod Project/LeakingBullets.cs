@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using ItemAPI;
 
-namespace ExampleMod
+namespace TitansMod
 {
     public class LeakingBullets : PassiveItem
     {
@@ -28,7 +28,7 @@ namespace ExampleMod
             ItemBuilder.AddSpriteToObject(itemName, resourceName, obj);
 
             //Ammonomicon entry variables
-            string shortDesc = "Missing the letter B";
+            string shortDesc = "Missing The Letter B";
             string longDesc = "Bullets leave a trail of water behind them.\n\n" +
                 "Originally they were Water Bullets, but someone wasn't being careful causing them to crack.";
 

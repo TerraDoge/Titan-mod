@@ -7,8 +7,8 @@
     <ProjectGuid>{D6D7A494-722E-4763-959B-C2D6B6A42B01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExampleMod</RootNamespace>
-    <AssemblyName>ExampleMod</AssemblyName>
+    <RootNamespace>TitansMod</RootNamespace>
+    <AssemblyName>TitansMod</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

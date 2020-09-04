@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using ItemAPI;
 
-namespace ExampleMod
+namespace TitansMod
 {
     public class TheBulletBullets : PassiveItem
     {
