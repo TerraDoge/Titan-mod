@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Boring Heart";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/boring_heart";
+            string resourceName = "TitansMod/Resources/boring_heart";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

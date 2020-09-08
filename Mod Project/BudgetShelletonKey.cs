@@ -17,7 +17,7 @@ namespace TitansMod
             string itemName = "Budget Shelleton Key";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/budget_shelleton_key";
+            string resourceName = "TitansMod/Resources/budget_shelleton_key";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

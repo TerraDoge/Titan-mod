@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Ring of Financial Thing";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/ring_of_financial_thing";
+            string resourceName = "TitansMod/Resources/ring_of_financial_thing";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

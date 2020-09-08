@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Mystery Seed";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/seed";
+            string resourceName = "TitansMod/Resources/seed";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

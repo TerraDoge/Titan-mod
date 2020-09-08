@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Fakey";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/fakey";
+            string resourceName = "TitansMod/Resources/fakey";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

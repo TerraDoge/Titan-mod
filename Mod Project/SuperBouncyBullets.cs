@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Super Bouncy Bullets";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/super_bouncy_bullets";
+            string resourceName = "TitansMod/Resources/super_bouncy_bullets";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

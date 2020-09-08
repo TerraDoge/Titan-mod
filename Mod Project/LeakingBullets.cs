@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "Leaking Bullets";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/leaking_bullets";
+            string resourceName = "TitansMod/Resources/leaking_bullets";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);

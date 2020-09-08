@@ -84,6 +84,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LargeBlank.cs" />
+    <Compile Include="BudgetMimicToothNecklace.cs" />
+    <Compile Include="MalfunctioningTimeMachine.cs" />
     <Compile Include="TheBulletBullets.cs" />
     <Compile Include="BudgetShelletonKey.cs" />
     <Compile Include="Fakey.cs" />
@@ -135,6 +138,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\budget_shelleton_key.png" />
     <EmbeddedResource Include="Resources\bullet_bullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\large_blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\malfunctioning_time_machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\budget_mimic_tooth_necklace.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

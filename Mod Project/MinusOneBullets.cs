@@ -16,7 +16,7 @@ namespace TitansMod
             string itemName = "-1 Bullets";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "ExampleMod/Resources/minus_one_bullets";
+            string resourceName = "TitansMod/Resources/minus_one_bullets";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);
