@@ -10,7 +10,7 @@ namespace TitansMod
     public class Module : ETGModule
     {
         public static readonly string MOD_NAME = "Titan's Mod";
-        public static readonly string VERSION = "0.0.3";
+        public static readonly string VERSION = "0.0.4";
         public static readonly string TEXT_COLOR = "#00FFFF";
 
         public override void Start()
@@ -29,6 +29,8 @@ namespace TitansMod
             BudgetMimicToothNecklace.Register();
             MalfunctioningTimeMachine.Init();
             LargeBlank.Register();
+            GoldenCylinder.Register();
+            PlusTwoBullets.Register();
             Log($"{MOD_NAME} v{VERSION} started successfully. Thank you for downloading!", TEXT_COLOR);
         }
 

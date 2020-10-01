@@ -7,45 +7,43 @@ using ItemAPI;
 
 namespace TitansMod
 {
-    public class MinusOneBullets : PassiveItem 
+    public class GoldenCylinder : PassiveItem
     {
         //Call this method from the Start() method of your ETGModule extension
         public static void Register()
         {
             //The name of the item
-            string itemName = "-1 Bullets";
+            string itemName = "Golden Cylinder";
 
             //Refers to an embedded png in the project. Make sure to embed your resources! Google it
-            string resourceName = "TitansMod/Resources/minus_one_bullets";
+            string resourceName = "TitansMod/Resources/golden_cylinder";
 
             //Create new GameObject
             GameObject obj = new GameObject(itemName);
 
             //Add a PassiveItem component to the object
-            var item = obj.AddComponent<MinusOneBullets>();
+            var item = obj.AddComponent<GoldenCylinder>();
 
             //Adds a sprite component to the object and adds your texture to the item sprite collection
             ItemBuilder.AddSpriteToObject(itemName, resourceName, obj);
 
             //Ammonomicon entry variables
-            string shortDesc = "-1 To Bullet...?";
-            string longDesc = "Reduces damage but increases other stats...\n\n" +
-                "Seems like a negative +1 bullets, but it has hidden benefits.";
+            string shortDesc = "the shiny thing";
+            string longDesc = "Increases firerate and causes enemies to drop much more money.\n\n" +
+                "A cylinder made from gold. Sometimes confused with Yellow Chamber.";
 
             //Adds the item to the gungeon item list, the ammonomicon, the loot table, etc.
             //Do this after ItemBuilder.AddSpriteToObject!
             ItemBuilder.SetupItem(item, shortDesc, longDesc, "tm");
 
             //Adds the actual passive effect to the item
-            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.Damage, -0.25f, StatModifier.ModifyMethod.ADDITIVE);
-            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.Accuracy, -0.30f, StatModifier.ModifyMethod.ADDITIVE);
+            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.MoneyMultiplierFromEnemies, 9f, StatModifier.ModifyMethod.ADDITIVE);
+            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.Curse, 1, StatModifier.ModifyMethod.ADDITIVE);
             ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.RateOfFire, 0.20f, StatModifier.ModifyMethod.ADDITIVE);
-            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.ReloadSpeed, -0.30f, StatModifier.ModifyMethod.ADDITIVE);
-            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.ProjectileSpeed, 0.10f, StatModifier.ModifyMethod.ADDITIVE);
-            ItemBuilder.AddPassiveStatModifier(item, PlayerStats.StatType.DamageToBosses, 0.10f, StatModifier.ModifyMethod.ADDITIVE);
+
 
             //Set the rarity of the item
-            item.quality = PickupObject.ItemQuality.C;
+            item.quality = PickupObject.ItemQuality.S;
         }
 
         public override void Pickup(PlayerController player)
